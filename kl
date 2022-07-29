@@ -1,0 +1,372 @@
+getgenv().autoegg = false;
+local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/MaterialLua/master/Module.lua"))()
+
+local X = Material.Load({
+    Title = "[Stormzzys Scripts] </> Drone Swarm Sim",
+    Style = 1,
+    SizeX = 370,
+    SizeY = 300,
+    Theme = "Dark", --light dark aqua mocha jester
+    ColorOverrides = {
+		NavBarAccent = Color3.fromRGB(130,130,130)
+    }
+})
+
+local Y = X.New({
+    Title = "Eggs"
+})
+
+local Z = X.New({
+    Title = "Teleports"
+})
+
+local R = X.New({
+    Title = "Bosses"
+})
+
+local C = X.New({
+    Title = "Character"
+})
+
+local M = X.New({
+    Title = "Misc"
+})
+
+local B = Y.Toggle({
+    Text = "Open Starter Capsule",
+    Callback = function(Value)
+        getgenv().autoegg = bool
+        
+        spawn(function()
+        while autoegg == true do
+local ohString1 = "Starter Capsule"
+local ohBoolean2 = false
+local ohBoolean3 = false
+
+game:GetService("ReplicatedStorage").Remotes.OpenEgg:InvokeServer(ohString1, ohBoolean2, ohBoolean3)
+ 		wait()
+ 	 end
+ end)
+    end,
+    Enabled = false
+})
+
+local B = Y.Toggle({
+    Text = "Open Swamp Capsule",
+    Callback = function(Value)
+        getgenv().autoegg = bool
+        
+        spawn(function()
+        while autoegg == true do
+local ohString1 = "Swamp Capsule"
+local ohBoolean2 = false
+local ohBoolean3 = false
+
+game:GetService("ReplicatedStorage").Remotes.OpenEgg:InvokeServer(ohString1, ohBoolean2, ohBoolean3)
+ 		wait()
+ 	 end
+ end)
+    end,
+    Enabled = false
+})
+
+local B = Y.Toggle({
+    Text = "Open High Plains Capsule",
+    Callback = function(Value)
+        getgenv().autoegg = bool
+        
+        spawn(function()
+        while autoegg == true do
+local ohString1 = "High Plains Capsule"
+local ohBoolean2 = false
+local ohBoolean3 = false
+
+game:GetService("ReplicatedStorage").Remotes.OpenEgg:InvokeServer(ohString1, ohBoolean2, ohBoolean3)
+ 		wait()
+ 	 end
+ end)
+    end,
+    Enabled = false
+})
+
+local B = Y.Toggle({
+    Text = "Open Sandy Capsule",
+    Callback = function(Value)
+        getgenv().autoegg = bool
+        
+        spawn(function()
+        while autoegg == true do
+local ohString1 = "Sandy Capsule"
+local ohBoolean2 = false
+local ohBoolean3 = false
+
+game:GetService("ReplicatedStorage").Remotes.OpenEgg:InvokeServer(ohString1, ohBoolean2, ohBoolean3)
+ 		wait()
+ 	 end
+ end)
+    end,
+    Enabled = false
+})
+
+local B = Y.Toggle({
+    Text = "Open Ruins Capsule",
+    Callback = function(Value)
+        getgenv().autoegg = bool
+        
+        spawn(function()
+        while autoegg == true do
+local ohString1 = "Ruins Capsule"
+local ohBoolean2 = false
+local ohBoolean3 = false
+
+game:GetService("ReplicatedStorage").Remotes.OpenEgg:InvokeServer(ohString1, ohBoolean2, ohBoolean3)
+ 		wait()
+ 	 end
+ end)
+    end,
+    Enabled = false
+})
+
+local B = Y.Toggle({
+    Text = "Open Ancient Capsule",
+    Callback = function(Value)
+        getgenv().autoegg = bool
+        
+        spawn(function()
+        while autoegg == true do
+local ohString1 = "Ancient Capsule"
+local ohBoolean2 = false
+local ohBoolean3 = false
+
+game:GetService("ReplicatedStorage").Remotes.OpenEgg:InvokeServer(ohString1, ohBoolean2, ohBoolean3)
+ 		wait()
+ 	 end
+ end)
+    end,
+    Enabled = false
+})
+
+local B = Y.Toggle({
+    Text = "Open Snowy Capsule",
+    Callback = function(Value)
+        getgenv().autoegg = bool
+        
+        spawn(function()
+        while autoegg == true do
+local ohString1 = "Snowy Capsule"
+local ohBoolean2 = false
+local ohBoolean3 = false
+
+game:GetService("ReplicatedStorage").Remotes.OpenEgg:InvokeServer(ohString1, ohBoolean2, ohBoolean3)
+ 		wait()
+ 	 end
+ end)
+    end,
+    Enabled = false
+})
+
+local B = Y.Toggle({
+    Text = "Open Frozen Capsule",
+    Callback = function(Value)
+        getgenv().autoegg = bool
+        
+        spawn(function()
+        while autoegg == true do
+local ohString1 = "Frozen Capsule"
+local ohBoolean2 = false
+local ohBoolean3 = false
+
+game:GetService("ReplicatedStorage").Remotes.OpenEgg:InvokeServer(ohString1, ohBoolean2, ohBoolean3)
+ 		wait()
+ 	 end
+ end)
+    end,
+    Enabled = false
+})
+
+local B = Y.Toggle({
+    Text = "Open Kindom Capsule",
+    Callback = function(Value)
+        getgenv().autoegg = bool
+        
+        spawn(function()
+        while autoegg == true do
+local ohString1 = "Kindom Capsule"
+local ohBoolean2 = false
+local ohBoolean3 = false
+
+game:GetService("ReplicatedStorage").Remotes.OpenEgg:InvokeServer(ohString1, ohBoolean2, ohBoolean3)
+ 		wait()
+ 	 end
+ end)
+    end,
+    Enabled = false
+})
+
+
+
+
+
+
+local A = R.Button({
+    Text = "Boss 1",
+    Callback = function()
+local ohString1 = "Boss 1"
+
+game:GetService("ReplicatedStorage").Remotes.BossFight:InvokeServer(ohString1)
+end
+})
+
+local A = R.Button({
+    Text = "Boss 2",
+    Callback = function()
+local ohString1 = "Boss 2"
+
+game:GetService("ReplicatedStorage").Remotes.BossFight:InvokeServer(ohString1)
+end
+})
+
+local A = R.Button({
+    Text = "Boss 3",
+    Callback = function()
+local ohString1 = "Boss 3"
+
+game:GetService("ReplicatedStorage").Remotes.BossFight:InvokeServer(ohString1)
+
+    end
+})
+
+local A = Z.Button({
+    Text = "World 1",
+    Callback = function()
+local ohString1 = "World 1"
+local ohString2 = "Zone 1"
+
+game:GetService("ReplicatedStorage").Remotes.RequestTeleport:InvokeServer(ohString1, ohString2)
+
+   end
+})
+
+local A = Z.Button({
+    Text = "World 2",
+    Callback = function()
+local ohString1 = "World 1"
+local ohString2 = "Zone 2"
+
+game:GetService("ReplicatedStorage").Remotes.RequestTeleport:InvokeServer(ohString1, ohString2)
+
+   end
+})
+
+local A = Z.Button({
+    Text = "World 3",
+    Callback = function()
+local ohString1 = "World 1"
+local ohString2 = "Zone 3"
+
+game:GetService("ReplicatedStorage").Remotes.RequestTeleport:InvokeServer(ohString1, ohString2)
+
+   end
+})
+
+local A = Z.Button({
+    Text = "World 4",
+    Callback = function()
+local ohString1 = "World 2"
+local ohString2 = "Zone 1"
+
+game:GetService("ReplicatedStorage").Remotes.RequestTeleport:InvokeServer(ohString1, ohString2)
+
+   end
+})
+
+local A = Z.Button({
+    Text = "World 5",
+    Callback = function()
+local ohString1 = "World 2"
+local ohString2 = "Zone 2"
+
+game:GetService("ReplicatedStorage").Remotes.RequestTeleport:InvokeServer(ohString1, ohString2)
+
+   end
+})
+
+local A = Z.Button({
+    Text = "World 6",
+    Callback = function()
+local ohString1 = "World 2"
+local ohString2 = "Zone 3"
+
+game:GetService("ReplicatedStorage").Remotes.RequestTeleport:InvokeServer(ohString1, ohString2)
+
+   end
+})
+
+local A = Z.Button({
+    Text = "World 7",
+    Callback = function()
+local ohString1 = "World 3"
+local ohString2 = "Zone 1"
+
+game:GetService("ReplicatedStorage").Remotes.RequestTeleport:InvokeServer(ohString1, ohString2)
+
+   end
+})
+
+local A = Z.Button({
+    Text = "World 8",
+    Callback = function()
+local ohString1 = "World 3"
+local ohString2 = "Zone 2"
+
+game:GetService("ReplicatedStorage").Remotes.RequestTeleport:InvokeServer(ohString1, ohString2)
+
+   end
+})
+
+local A = Z.Button({
+    Text = "World 9",
+    Callback = function()
+local ohString1 = "World 3"
+local ohString2 = "Zone 3"
+
+game:GetService("ReplicatedStorage").Remotes.RequestTeleport:InvokeServer(ohString1, ohString2)
+
+   end
+})
+--[[
+local B = Y.Toggle({
+    Text = "I'm a switch",
+    Callback = function(Value)
+        print(Value)
+    end,
+    Enabled = false
+})
+--]]
+local B = C.Slider({
+    Text = "ws/walkspeed",
+    Callback = function(Value)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
+    end,
+    Min = 16,
+    Max = 200,
+    Def = 16
+})
+local B = C.Slider({
+    Text = "jp/jumppower",
+    Callback = function(Value)
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = value
+    end,
+    Min = 16,
+    Max = 200,
+    Def = 16
+})
+local B = M.Slider({
+    Text = "Cash/Coins",
+    Callback = function(Value)
+        game.Players.LocalPlayer.leaderstats.Coins.Value = value
+    end,
+    Min = 0,
+    Max = 1000000000000,
+    Def = 0
+})
